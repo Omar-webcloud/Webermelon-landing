@@ -87,6 +87,7 @@
 /* hero */
 .hero{
     margin-top: 100px;
+    margin-bottom: 140px;
 }
 .hero-title{
 font-weight: 500;
@@ -108,12 +109,19 @@ font-style: Medium;
 font-size: 28px;
 line-height: 140%;
 letter-spacing: -3%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
 
 }
 .hero-img img{
     width: 100%;
 }
-
+.hero-sub h3 img{
+    width: 21px;
+    height: 20px;
+}
 
 
 
@@ -153,6 +161,7 @@ letter-spacing: -3%;
     }
     .hero{
         margin-top: 40px;
+        margin-bottom: 40px;
     }
     .hero-title{
         font-size: 88px;
