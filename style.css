@@ -25,21 +25,38 @@
     height: 40px;
 }
 
-.nav-menu{
+
+* {
+    box-sizing: border-box;
+}
+
+.nav-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    gap: 16px;
+    gap: 8px; 
     background-color: #EDEDED;
     border-radius: 999px;
-    padding: 8px 12px;
+    padding: 4px; 
     color: #011F11;
     font-size: 16px;
-    padding-left: 0;
-    height: 38px;
-    max-width: 474px;
+    height: 46px; 
+    
 }
+
+.nav-item {
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 999px;
+    transition: all 0.3s ease; 
+}
+
+.nav-item.active {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 .nav-btn{
     width: 129px;
     height: 44px;
