@@ -126,9 +126,123 @@ gap: 12px;
 
 
 
+/* tools */
+
+.tools{
+    background-color: #000000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.tools-title{
+font-weight: 400;
+font-size: 48px;
+color: #FFFFFF;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+.big-box-container{
+    display: grid;
+    grid-template-columns: repeat(2, 624px 592px);
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.big-box{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    height: 178px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-desc{
+font-weight: 400;
+font-size: 24px;
+color: #000000;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+max-width: 460px;
+
+}
+.more{
+    display: grid;
+    align-content: space-between;
+    justify-items: flex-end;
+}
+.more img{
+    width: 40px;
+}
+.more-about{
+        text-align: right;
+        color: #24806F;
+        font-family: Poppins;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+.small-box-container{
+        display: grid;
+     grid-template-columns: repeat(3, 284px 284px 624px);
+     gap: 24px;
+}
+.black-box{
+    color:#FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 18px 13px;
+    border-radius: 16px;
+    height: 178px;
+    display: grid;
+    align-content: space-between;
+
+}
+.black-box img{
+    justify-self: right;
+}
+.black-box-text{
+font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.small-box-img img{
+    width: 284px;
+    border-radius: 16px;
+    height: 178px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive */
+
+@media (max-width:1250px){
+    .small-box-img img{
+    width: 100%;
+ }
+ .big-box-img img{
+    width: 100%;
+ }
+}
 
 @media (max-width:1000px) {
     .nav-bar, .container{
@@ -168,6 +282,29 @@ gap: 12px;
     }
 }
 
+@media (max-width:776px) {
+     .tools-title{
+        text-align: center;
+    }
+ .big-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .big-box-img img{
+    width: 100%;
+ }
+ .small-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+ }
+ .small-box-img img{
+    width: 100%;
+ }
+}
+
 @media (max-width:576px) {
    
     .nav-menu{
@@ -195,5 +332,12 @@ gap: 12px;
      .hero-sub h3{
         font-size: 24px;
      }
-
+    
+     .tools-title{
+        font-size: 28px;
+     }
+     .tools p{
+        font-size: 16px;
+     }
+     
 }
