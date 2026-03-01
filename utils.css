@@ -1,0 +1,12 @@
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.active{
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 9999px;
+    padding: 8px 20px;
+    height: 38px;
+}
