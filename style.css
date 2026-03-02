@@ -402,14 +402,35 @@ color: #A4A4A4;
     .hero-title{
         font-size: 88px;
     }
+    .project-title{
+        font-size: 38px;
+        width: 450px;
+    }
+    .project-no{
+        font-size: 16px;
+    }
+    .project-name{
+        font-size: 38px;
+    }
+    .podcast{
+        font-size: 16px;
+    }
+    .podcast img{
+        width: 24px;
+    }
 }
 
 @media (max-width:776px) {
-    
+    .project-img{
+        display: none;
+        opacity: 0;
+    }
 }
 
 @media (max-width:576px) {
-   
+   .nav-bar{
+    margin-top: 10px;
+   }
     .nav-menu{
         font-size: 14px;
         padding: 10px;
@@ -441,5 +462,52 @@ color: #A4A4A4;
      .tools p{
         font-size: 16px;
      }
-     
+
+     .project-title{
+        font-size: 28px;
+        padding: 15px;
+        margin-bottom: 20px;
+        width: max-content;
+        height: max-content;
+     }
+     .project-container{
+        padding-top: 15px;
+        padding-bottom: 20px;
+     }
+     .project-name{
+        font-size: 24px;
+     }
+     .project-no, .podcast{
+        font-size: 14px;
+     }
+}
+
+@media (max-width:450px) {
+    .project-grid{
+        gap: 8px;
+    }
+    .project-container{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .project-title{
+        font-size: 22px;
+    }
+    .project-name{
+        font-size: 20px;
+    }
+    .number-title{
+        gap: 12px;
+    }
+    .project-no{
+      font-size: 12px;
+      padding: 10px;
+    }
+    .podcast{
+        font-size: 12px;
+    }
+    .podcast img{
+        width: 16px;
+    }
 }
