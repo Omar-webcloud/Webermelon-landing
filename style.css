@@ -223,6 +223,114 @@ vertical-align: middle;
 
 
 
+/* project */
+
+.project{
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+.project-grid{
+    display: grid;
+    gap: 32px;
+}
+.project-title{
+font-weight: 400;
+font-size: 48px;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-align: center;
+color: #FFFFFF;
+background-color: #24806F;
+border-radius: 28px;
+border-bottom-left-radius: 0px;
+max-width: 536px;
+padding: 20px 38px;
+justify-self: center;
+height: 107px;
+margin-bottom: 48px;
+
+}
+.number-title{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+     transition: all 0.3s ease ;
+}
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 44px;
+    border-bottom: 2px solid #A4A4A4;
+     position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+ 
+
+}
+.project-container:hover .project-name{
+    color: #24806F;
+    
+}
+.project-container:hover .number-title{
+    padding-left: 40px;
+    
+}
+/* .project-container:hover .project-img{
+    opacity: 1;
+} */
+.project-no{
+font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #24806F;
+padding: 18px 20px;
+border: 1.5px solid #24806F;
+border-radius: 100px;
+}
+.project-name{
+font-weight: 400;
+font-size: 64px;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #A4A4A4;
+ transition: all 0.3s ease ;
+}
+.project-img{
+    width: 298px;
+height: 171px;
+border-radius: 20px;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(19.21deg);
+    border-radius: 20px;
+    display: none;
+}
+
+.podcast{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #A4A4A4;
+}
+.podcast img{
+    width: 33px;
+    vertical-align: middle;
+}
+
+
+
+
 
 
 
@@ -236,6 +344,10 @@ vertical-align: middle;
 /* responsive */
 
 @media (max-width:1250px){
+    .nav-bar, .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
      .tools-title{
         text-align: center;
     }
@@ -258,10 +370,7 @@ vertical-align: middle;
 }
 
 @media (max-width:1000px) {
-    .nav-bar, .container{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+    
     .nav-menu{
         display: none;
         flex-direction: column;
@@ -313,8 +422,7 @@ vertical-align: middle;
         width: 150px;
     }
     .nav-btn{
-            width: 110px;
-            font-size: 12px;
+           display: none;
     }
      .hero-title{
         font-size: 40px;
