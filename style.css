@@ -776,11 +776,48 @@ top: 20px;
     margin-top: 140px;
     margin-bottom: 140px;
 }
-
-
-
-
-
+.template-container{
+    display: flex;
+    gap: 16px;
+}
+.template-title{
+font-weight: 500;
+font-style: Medium;
+font-size: 64px;
+line-height: 140%;
+letter-spacing: 0px;
+height: fit-content;
+}
+.template-title span{
+    background: #AEEDE3;
+  padding: 0.1em ;
+  border-radius: 20px;
+}
+.temp-left{
+    display: grid;
+    gap: 58px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    height: fit-content;
+}
+.tags{
+    display: grid;
+    gap: 16px;
+}
+.tags-top, .tags-bottom{
+    display: flex;
+    gap: 16px;
+}
+.tag{
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0px;
+border: 1px solid #1D1D21;
+border-radius: 100px;
+padding: 12px 24px;
+width: max-content;
+}
 
 
 
