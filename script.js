@@ -55,3 +55,19 @@ projectContainers.forEach(container => {
     img.style.top = y + 'px';
   });
 });
+
+
+// swiper
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".temp-right", {
+    slidesPerView: 2,
+    spaceBetween: 16,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+});

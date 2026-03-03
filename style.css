@@ -787,6 +787,7 @@ font-size: 64px;
 line-height: 140%;
 letter-spacing: 0px;
 height: fit-content;
+    width: 515px;
 }
 .template-title span{
     background: #AEEDE3;
@@ -818,6 +819,110 @@ border-radius: 100px;
 padding: 12px 24px;
 width: max-content;
 }
+.clipped-box-1{
+    background: url(images/template-img-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.clipped-box-2{
+   background: url(images/template-img-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.clipped-box-3{
+   background-color: #ACEBDF;
+}
+/* .temp-right{
+    display: flex;
+    gap: 16px;
+} */
+.temp-card{
+    padding-left: 24px;
+    padding-right: 24px;
+    display: grid;
+    gap: 16px;
+    width: 344px;
+    height: fit-content;
+}
+.temp-box{
+    padding-left:20px ;
+    padding-right: 20px;
+    border-radius: 20px;
+    height: 300px;
+    padding-top: 54px;
+}
+.white-chat{
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+letter-spacing: 0%;
+background-color:#FFFFFF ;
+box-shadow: 0px 1.72px 6.89px 0px #232F3517;
+padding: 16px;
+border-radius: 5.17px;
+
+display: grid;
+    gap: 8px;
+}
+.green-chat{
+    background-color: #24806F;
+    margin-top: 16px;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+letter-spacing: 0%;
+color: #FFFFFF;
+padding: 16px;
+border-radius: 5.17px;
+margin-bottom: 54px;
+}
+.temp-name{
+font-weight: 600;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0px;
+margin-bottom: 4px;
+    margin-top: 16px;
+}
+.temp-para{
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: 0px;
+color: #606060;
+margin-bottom: 16px;
+}
+.temp-btn{
+    font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+text-align: center;
+padding: 12px;
+line-height: 150%;
+letter-spacing: 0px;
+color: #FFFFFF;
+background-color: #000000;
+border-radius: 100px;
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  height: 470px;
+  width: 344px !important;
+}
+
+
+
 
 
 
