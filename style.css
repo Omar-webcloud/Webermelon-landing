@@ -852,6 +852,8 @@ width: max-content;
     border-radius: 20px;
     height: 300px;
     padding-top: 54px;
+  clip-path: polygon(0 17%, 10% 16%, 15% 8%, 15% 0, 100% 0, 100% 15%, 100% 86%, 88% 87%, 78% 91%, 77% 100%, 0 100%);
+    border-top-left-radius: 30%;
 }
 .white-chat{
 font-weight: 400;

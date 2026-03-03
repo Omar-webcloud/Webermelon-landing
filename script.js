@@ -60,14 +60,14 @@ projectContainers.forEach(container => {
 // swiper
 
 
- document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".temp-right", {
-    slidesPerView: 2,
-    spaceBetween: 16,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-});
+//  document.addEventListener("DOMContentLoaded", function () {
+//   new Swiper(".temp-right", {
+//     slidesPerView: 2,
+//     spaceBetween: 16,
+//     loop: true,
+//     autoplay: {
+//       delay: 2500,
+//       disableOnInteraction: false,
+//     },
+//   });
+// });
