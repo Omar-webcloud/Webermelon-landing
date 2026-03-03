@@ -297,7 +297,7 @@ behind the work</h1>
             <div class="temp-right swiper">
                 <div class="swiper-wrapper">
               <div class="temp-card swiper-slide">
-                <div class="temp-box clipped-box-1">
+                <div class="temp-box clipped-box-1 goo-filter-wrapper">
                     <div class="white-chat"><p>Great Happy yo help find the right plan for you 🎯.</p>
 What are you lookin to do with Rotar AI</div>
 <div class="green-chat">Get more customer on my website page</div>
@@ -308,8 +308,8 @@ What are you lookin to do with Rotar AI</div>
                     <p class="temp-btn">Try template for free <img src="images/template-arrow.png" alt=""></p>
                 </div>
               </div>
-              <div class="temp-card swiper-slide">
-                <div class="temp-box clipped-box-2">
+              <div class="temp-card swiper-slide ">
+                <div class="temp-box clipped-box-2 goo-filter-wrapper">
                     <div class="white-chat">You have qualified for the next round of interview, Alvarez! Please let me know your availability 🌟</div>
 <div class="green-chat">Any time between 2 to 5 PM tomorrow</div>
                 </div>
@@ -320,7 +320,7 @@ What are you lookin to do with Rotar AI</div>
                 </div>
               </div>
               <div class="temp-card swiper-slide">
-                <div class="temp-box clipped-box-3">
+                <div class="temp-box clipped-box-3 goo-filter-wrapper">
                     <div class="white-chat"><p>Great Happy yo help find the right plan for you 🎯.</p>
 What are you lookin to do with Rotar AI</div>
 <div class="green-chat">Get more customer on my website page</div>
@@ -342,6 +342,21 @@ What are you lookin to do with Rotar AI</div>
 
    </main>
 
+
+
+
+
+   <!-- svg -->
+
+   <svg style="visibility: hidden; position: absolute" width="0" height="0">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+    </filter>
+  </defs>
+</svg>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
