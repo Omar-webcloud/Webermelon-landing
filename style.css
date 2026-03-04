@@ -977,6 +977,33 @@ justify-content: center;
      .tools-title{
         text-align: center;
     }
+    .template-title{
+        width: 100%;
+        font-size: 48px;
+        text-align: center;
+    }
+    .template-container{
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+    .temp-left{
+        align-items: center;
+        justify-items: center;
+    }
+    .tags{
+        justify-items: center;
+    }
+    .tags-top, .tags-bottom{
+        justify-content: center;
+    }
+    .temp-right{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
  .big-box-container{
     display: flex;
     flex-wrap: wrap;
@@ -1066,7 +1093,16 @@ justify-content: center;
     .podcast img{
         width: 24px;
     }
-    
+    .template{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .template-title{
+        font-size: 40px;
+    }
+    .tags-top, .tags-bottom{
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:776px) {
@@ -1080,6 +1116,21 @@ justify-content: center;
 }
 .creative-container{
     gap: 5px;
+}
+.template{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.template-title{
+    font-size: 36px;
+    width: 100%;
+}
+.temp-left{
+    gap: 32px;
+}
+.swiper-slide {
+  height: 420px;
+  width: 300px !important;
 }
 }
 
@@ -1200,6 +1251,28 @@ justify-content: center;
 .man-desc, .details{
     font-size: 14px;
 }
+.template-title{
+    font-size: 28px;
+}
+.tags{
+    gap: 12px;
+}
+.tags-top, .tags-bottom{
+    gap: 8px;
+}
+.tag{
+    font-size: 14px;
+    padding: 10px 16px;
+}
+.temp-card{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+.swiper-slide {
+  height: 380px;
+  width: 100% !important;
+}
 
 }
 
@@ -1238,6 +1311,26 @@ justify-content: center;
 .creative-mind, .man-img {
     width: 100%;
 }
+.template{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.template-title{
+    font-size: 24px;
+}
+.temp-left{
+    gap: 24px;
+}
+.temp-name{
+    font-size: 20px;
+}
+.temp-para{
+    font-size: 14px;
+}
+.white-chat, .green-chat{
+    font-size: 11px;
+    padding: 12px;
+}
 
 }
 
@@ -1248,5 +1341,28 @@ justify-content: center;
 }
 .percent{
             left: 20%;
+}
+}
+
+@media (max-width:480px) {
+.template-container{
+    padding: 0 10px;
+}
+.template-title{
+    font-size: 22px;
+}
+.temp-left{
+    gap: 16px;
+}
+.tag{
+    font-size: 12px;
+    padding: 8px 12px;
+}
+.swiper-slide {
+  height: 340px;
+}
+.temp-box{
+    height: 260px;
+    padding-top: 40px;
 }
 }
