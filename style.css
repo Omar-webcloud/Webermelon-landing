@@ -868,8 +868,8 @@ width: max-content;
   );
     border-top-left-radius: 16px;
 }
-.goo-filter-wrapper {
-  filter: url("#goo");
+.svg-filter-wrapper {
+  filter: url("#gooey");
 }
 
 .white-chat{
