@@ -1036,18 +1036,101 @@ footer{
     padding-top: 80px;
     padding-bottom: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left{
+    max-width: 356px;
+}
+.footer-para{
+    margin-top: 24px;
+    margin-bottom: 48px;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}
+.footer-right ul{
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+.footer-right ul li{
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.footer-right{
+    display: flex;
+    gap: 170px;
+}
+.marketing-title{
+    margin-top: 60px;
+    margin-bottom:20px ;
+}
+.quick-tag, .q-link{
+ margin-bottom: 20px;
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.footer-bottom{
+    margin-top: 100px;
+}
+.location-box{
+    background-color: #24806F;
+    border-radius: 24px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 89%, 94% 100%, 0% 100%);
+    padding: 59px 36px;
+    display: flex;
+    margin-bottom: 48px;
+    gap: 86px;
+}
+.webermelon{
+    position: relative;
+    bottom: -33px;
+}
+.location{
+    display: grid;
+    gap: 20px;
+    
+}
+.location-title{
+font-weight: 500;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.location-para{
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.copyright{
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+.f-bottom-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.socials img{
+    width: 48px;
+}
 
 
 
