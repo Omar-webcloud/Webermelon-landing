@@ -71,3 +71,47 @@ projectContainers.forEach(container => {
     },
   });
 });
+
+
+
+
+
+
+
+//project slide
+
+
+const projectSwiper = new Swiper(".projectSwiper", {
+  direction: "vertical",
+  speed: 1200,
+  mousewheel: true,
+  effect: "creative",
+
+  creativeEffect: {
+    prev: {
+      translate: [0, "-100%", 0],
+      opacity: 0,
+    },
+    next: {
+      translate: [0, "100%", 0],
+      opacity: 0,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+
+const slides = projectSwiper.slides;
+
+function updateBackground() {
+  const activeSlide = slides[projectSwiper.activeIndex];
+  const bg = activeSlide.getAttribute("data-bg");
+  activeSlide.style.background = bg;
+}
+
+updateBackground();
+projectSwiper.on("slideChange", updateBackground);
