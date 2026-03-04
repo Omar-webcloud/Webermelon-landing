@@ -1069,6 +1069,10 @@ letter-spacing: 0%;
 .marketing-title{
     margin-top: 60px;
     margin-bottom:20px ;
+font-weight: 500;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
 }
 .quick-tag, .q-link{
  margin-bottom: 20px;
@@ -1220,6 +1224,10 @@ color: #FFFFFF;
     .percent-circle{
         position: relative;
     }
+    .webermelon{
+    
+        width: 100%;
+    }
 }
 
 @media (max-width:1000px) {
@@ -1291,6 +1299,12 @@ color: #FFFFFF;
       .control-para{
         max-width: 300px;
       }
+      .footer-top{
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        gap: 20px;
+      }
 }
 
 @media (max-width:776px) {
@@ -1329,6 +1343,28 @@ color: #FFFFFF;
 }
 .contact-us img{
     width: 14px;
+}
+.footer-right{
+    gap: 15px;
+}
+.footer-bottom{
+    margin-top: 20px;
+}
+.location-box {
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.location-title{
+    font-size: 18px;
+}
+.location-para, .copyright{
+    font-size: 12px;
+}
+.socials img{
+  width: 24px;
+}
+footer{
+    padding-bottom: 20px;
 }
 }
 
@@ -1485,6 +1521,19 @@ color: #FFFFFF;
 .control-btn-container{
     justify-self: center;
 }
+.webermelon{
+        bottom: -20px;
+}
+.q-link, .quick-tag, .marketing-title{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.marketing-logo{
+    width: 100%;
+}
+.footer-right ul li{
+    font-size: 12px;
+}
 }
 
 @media (max-width:450px) {
@@ -1542,7 +1591,15 @@ color: #FFFFFF;
     font-size: 11px;
     padding: 12px;
 }
-
+.webermelon{
+    bottom: -14px;
+}
+.location-box {
+    flex-wrap: wrap;
+}
+.f-bottom-links{
+    gap: 10px;
+}
 }
 
 
