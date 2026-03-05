@@ -284,7 +284,7 @@ margin-bottom: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 28px;
+    padding-top: 24px;
     padding-bottom: 44px;
     border-bottom: 2px solid #A4A4A4;
      position: relative;
@@ -307,7 +307,7 @@ margin-bottom: 48px;
 .project-no{
 font-weight: 400;
 font-size: 24px;
-line-height: 140%;
+line-height: 17px;
 letter-spacing: 0%;
 vertical-align: middle;
 color: #24806F;
@@ -318,7 +318,7 @@ border-radius: 100px;
 .project-name{
 font-weight: 400;
 font-size: 64px;
-line-height: 140%;
+line-height: 71%;
 letter-spacing: 0%;
 vertical-align: middle;
 color: #A4A4A4;
@@ -396,7 +396,7 @@ color: #707070;
     border-radius: 40px;
     padding-left:25px ;
     padding-right:25px ;
-    padding-bottom: 37px;
+    padding-bottom: 28px;
     max-height: 436px;
 }
 .left-box::before{
@@ -583,7 +583,7 @@ letter-spacing: 0px;
     display: grid;
     gap: 64px;
     padding: 20px;
-    
+    height: 432px;
 }
 .right-box-3-text{
     display: grid;
@@ -755,6 +755,7 @@ justify-self: center;
     background-color: #24806F;
     border-radius: 20px;
     padding:  24px;
+    /* padding-top: 16px; */
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     color: #FFFFFF;
@@ -997,7 +998,7 @@ cursor: pointer;
   right: 100px;
   height: 100%;
   width: 1px;
-  background-color: #ffffff33;
+  background-color: #ffffff;
 }
 
 .line1 { right: 370px; }
