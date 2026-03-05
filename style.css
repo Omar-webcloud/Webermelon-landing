@@ -941,16 +941,144 @@ justify-content: center;
 }
 
 
-/* project */
+/* completed project */
 
+.completed-project-bg {
+  background-color: #443747;
+  transition: background-color 0.5s ease;
+}
 
+.completed-project-section {
+  /* max-width: 1340px; */
+  margin: 0 auto;
+  padding-right: 100px;
+  height: 810px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
 
+.line {
+  position: absolute;
+  right: 100px;
+  height: 100%;
+  width: 1px;
+  background-color: #ffffff33;
+}
 
+.line1 { right: 370px; }
+.line2 { right: 640px; }
 
+.completed-circle-wrapper {
+  display: flex;
+  gap: 17px;
+  margin-top: 87px;
+}
 
+.semi-circle-down {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  left: -260px;
+  top: 50%;
+  transform: translateY(-50%);
+  --fill: 150deg;
+  background: conic-gradient(
+    from 270deg,
+    #ffffff 0deg,
+    #ffffff var(--fill),
+    transparent var(--fill),
+    transparent 360deg
+  );
+  transition: all 0.5s ease-in-out;
+  mask: radial-gradient(circle, transparent 63.4%, #000 64.3%, #000 65.8%, transparent 66.6%);
+  -webkit-mask: radial-gradient(circle, transparent 63.4%, #000 64.3%, #000 65.8%, transparent 66.6%);
+}
 
+.fruit-list {
+  position: absolute;
+  gap: 16px;
+  padding-right: 30px;
+  top: 42%;
+    left: 137px;
+}
 
+.fruit-list li {
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  list-style: none;
+  
+}
 
+.fruit-list li.active {
+  font-weight: 700;
+  
+}
+
+.fruits {
+  margin-top: 119px;
+  transition: transform 1500ms cubic-bezier(0.96, 0.01, 0.02, 0.99);
+}
+
+.slider {
+  width: 270px;
+  height: 340px; 
+}
+
+.fruit-img {
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.completed-text{
+
+color: #FFFFFF;
+}
+.completed-title{
+font-weight: 700;
+font-size: 42px;
+line-height: 140%;
+letter-spacing: 0%;
+width: max-content;
+}
+.completed-para{
+    max-width: 326px;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: justify;
+}
+.arrow-btn{
+    align-self: flex-end;
+    padding-bottom: 30px;
+}
+.completed-fruit-number{
+    font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 70px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: justify;
+color: #FFFFFF;
+}
+.completed-fruit-name{
+    color: #FFFFFF;
+font-weight: 600;
+font-size: 17px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: justify;
+}
+.slider-2, .slider-4, .slider-6{
+    position: relative;
+    right: 270px;
+}
 
 
 /* control */
