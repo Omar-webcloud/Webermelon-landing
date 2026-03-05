@@ -1907,7 +1907,7 @@ footer{
 }
 
 
-@media (max-width:370px) {
+@media (max-width:375px) {
      .percent-sub{
    right: 37%;
 }
@@ -1950,6 +1950,20 @@ footer{
     position: relative;
     right: 15%;
 }
+.completed-circle-wrapper {
+    gap: 8px;
+    margin-top: 20px;
+}
+.fruit-list{
+    padding-top: 0;
+}
+.completed-fruit-name{
+    width: min-content;
+}
+.fruits {
+    position: relative;
+    right: 18px;
+    margin-top: 80px;}
 }
 @media (max-width:820px) {
   .arrow-btn{  
@@ -1974,5 +1988,9 @@ footer{
 }
 .line2{
     display: none;
+}
+.project, .control {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 }
