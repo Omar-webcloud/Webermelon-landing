@@ -18,6 +18,7 @@ const navMenu = document.querySelector(".nav-menu");
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("show");
+    navToggle.classList.toggle("open");
 });
 
 
@@ -62,13 +63,18 @@ projectContainers.forEach(container => {
 
  document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".temp-right", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
       
+    },
+    breakpoints: {
+      577: {
+        slidesPerView: 2,
+      },
     },
   });
 });
@@ -82,7 +88,7 @@ projectContainers.forEach(container => {
 //project slide
 
 const sliders = document.querySelectorAll(".slider");
-const fruitsContainer = document.querySelector(".fruits");
+const fruitsContainer = document.querySelector(".fruits"); 
 const upBtn = document.querySelector(".arrow-up");
 const downBtn = document.querySelector(".arrow-down");
 const completeBg = document.querySelector(".completed-project-bg");
