@@ -19,7 +19,7 @@ body {
 }
 
 
-/* Font */
+
 .size12 {
   font-size: 12px;
   font-weight: 400;
@@ -98,8 +98,9 @@ body {
 }
 
 .creative-btn:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease;
+  transform: scale(1.05) translateY(-2px);
+  background-color: #ffffff;
+  color: #24806f;
 }
 
 
@@ -109,8 +110,46 @@ header {
 }
 
 .logo,
-.btn,.btn-background {
+.btn, .btn-background,
+.btn-primary,
+.creative-btn,
+.try-btn,
+.btn-3,
+.sliding-btn,
+.learn,
+.nav-items li,
+.favorite-content,
+.temp-list,
+.arrow-up,
+.arrow-down,
+.social-icons img,
+.icon,
+.more,
+#menu-toggle {
   cursor: pointer;
+}
+
+.btn,
+.btn-primary,
+.creative-btn,
+.try-btn,
+.btn-3,
+.sliding-btn,
+.learn,
+.nav-items li,
+.temp-list,
+.favorite-content,
+#menu-toggle {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn-primary:hover,
+.try-btn:hover,
+.btn-3:hover,
+.learn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
 }
 
 .nav {
@@ -1112,8 +1151,7 @@ footer {
 }
 
 .sliding-btn:hover {
-  padding-left: 16px;
-  padding-right: 50px;
+  transform: scale(1.03);
   background-color: #24806f;
   color: #ffffff;
 }
@@ -1133,7 +1171,6 @@ footer {
 }
 
 .sliding-btn:hover span {
-  left: calc(100% - 40px);
   background-color: #ffffff;
   color: #24806f;
 }
@@ -1276,22 +1313,41 @@ footer {
     top: 60px;
     left: 0;
     width: 100%;
-    background: black;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     display: none;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
-    border-radius: 0;
-    height: 315px;
+    padding: 30px 0;
+    border-radius: 0 0 24px 24px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
   .nav-items li {
-    color: #ffffff;
+    color: #000000;
+    font-weight: 500;
+    padding: 15px;
   }
 
   #menu-toggle {
     display: block;
     cursor: pointer;
+    font-size: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  #menu-toggle:hover {
+    transform: scale(1.15) rotate(5deg);
+    color: #24806f;
+  }
+
+  #menu-checkbox:checked + #menu-toggle {
+    transform: rotate(90deg);
+    color: #24806f;
   }
 
   .button {
@@ -1677,22 +1733,41 @@ footer {
     top: 60px;
     left: 0;
     width: 100%;
-    background: black;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     display: none;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
-    border-radius: 0;
-    height: 315px;
+    padding: 30px 0;
+    border-radius: 0 0 24px 24px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
   .nav-items li {
-    color: #ffffff;
+    color: #000000;
+    font-weight: 500;
+    padding: 15px;
   }
 
   #menu-toggle {
     display: block;
     cursor: pointer;
+    font-size: 24px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  #menu-toggle:hover {
+    transform: scale(1.15) rotate(5deg);
+    color: #24806f;
+  }
+
+  #menu-checkbox:checked + #menu-toggle {
+    transform: rotate(90deg);
+    color: #24806f;
   }
 
   .button {
