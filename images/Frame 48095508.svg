@@ -1,0 +1,28 @@
+<svg width="278" height="198" viewBox="0 0 278 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="11.5" width="255" height="95" rx="10" fill="white"/>
+<mask id="mask0_1_1985" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="26" y="16" width="33" height="32">
+<ellipse cx="42.667" cy="32" rx="16" ry="16" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1_1985)">
+<rect x="25.3335" y="16" width="33.3333" height="54.6667" fill="#D9D9D9"/>
+</g>
+<rect x="66.667" y="20.5" width="113" height="23" rx="11.5" fill="#EFEFEF"/>
+<rect x="26.667" y="56" width="217.082" height="23" rx="11.5" fill="#EFEFEF"/>
+<rect x="11.5" y="103" width="255" height="95" rx="10" fill="white"/>
+<rect width="145.037" height="32" transform="translate(26.6672 119)" fill="white"/>
+<mask id="mask1_1_1985" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="26" y="119" width="33" height="32">
+<circle cx="42.6672" cy="135" r="16" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_1_1985)">
+<rect x="24.6672" y="119" width="35" height="35" fill="#CFC3A7"/>
+</g>
+<rect x="66.6672" y="123.5" width="113" height="23" rx="10" fill="#EFEFEF"/>
+<rect x="26.6672" y="159" width="217.082" height="23" rx="10" fill="#EFEFEF"/>
+<rect y="95" width="278" height="103" fill="url(#paint0_linear_1_1985)"/>
+<defs>
+<linearGradient id="paint0_linear_1_1985" x1="139" y1="95" x2="139" y2="198" gradientUnits="userSpaceOnUse">
+<stop offset="0.628125" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="var(--font-ac-bg)"/>
+</linearGradient>
+</defs>
+</svg>

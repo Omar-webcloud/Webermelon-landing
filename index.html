@@ -1,538 +1,823 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/wm-w2.png" type="image/x-icon">
-
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-
-<!-- swiper -->
- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Webermelon</title>
-</head>
+    
+     <link rel="shortcut icon" href="images/wm-w2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
 
-<body>
-           <!-- navbar -->
+  <body>
+    <!-- Header -->
     <header>
-        <nav class="nav-bar">
-             
-             <div class="logo"><img src="images/wm-logo.png" alt=""></div>
-            
-             <ul class="nav-menu">
-                <li  class="nav-item active">Home</li>
-                <li class="nav-item">About</li>
-                <li class="nav-item">Services</li>
-                <li class="nav-item">Portfolio</li>
-                <li class="nav-item">Contact</li>
-             </ul>
+      <nav class="nav">
+        <div class="logo"><img src="./images/Group 1.svg" alt="" /></div>
 
-             <button class="nav-btn"><img src="images/calling.png" alt="">Let's Talk</button>
+        <input type="checkbox" id="menu-checkbox" hidden />
+        <label for="menu-checkbox" id="menu-toggle"><i class="fa-solid fa-bars"></i></label>
 
-             <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span ></span>
-            </div>
-
-        </nav>
+        <ul class="nav-items">
+          <li class="size16 active">Home</li>
+          <li class="size16">About</li>
+          <li class="size16">Services</li>
+          <li class="size16">Portfolio</li>
+          <li class="size16">Contact</li>
+        </ul>
+        <div class="btn button">
+          <img src="./images/calling.svg" alt="" />
+          <button class="btn-background">Let's Talk</button>
+        </div>
+      </nav>
     </header>
 
-   <main>
-
-               <!-- hero -->
-
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Design That <br>
-                Inspires & Delights</h1>
-<div class="hero-sub">
-    <h3>(Hero Section)</h3>
-    <h3><img src="images/bottom-right-Arrow.png" alt=""> Learn More</h3>
-</div>
-<div class="hero-img">
-    <img src="images/hero-img.png" alt="">
-</div>
-        </div>
-    </section>
-
-
-
-            <!-- tools -->
-
-    <section class="tools">
-        <div class="container">
-            <h1 class="tools-title">We Use Design Tools <br>That Deliver Excellence</h1>
-
-            <div class="big-box-container">
-                <div class="big-box">
-                    <p class="box-desc">We work with globally trusted design software and technologies. </p>
-                    
-                    <div class="more">
-                        <img class="big-box-icon" src="images/white-arrow.png" alt="">
-                        <p class="more-about">More About</p>
-                    </div>
-
-                </div>
-                <div class="big-box-img"><img src="images/wide-box.png" alt=""></div>
-
-            </div>
-            <div class="small-box-container">
-                <div class="black-box">
-                    <p class="black-box-text">Proven Design Systems & Assets
-By Figma</p>
-<img src="images/green-arrow.png" alt="">
-                </div>
-                <div class="small-box-img">
-                    <img src="images/theme-box.png" alt="">
-                </div>
-                <div class="big-box">
-                    <p class="box-desc">Every design goes through structured research, iteration, and quality. </p>
-                    
-                    <div class="more">
-                        <img class="big-box-icon" src="images/white-arrow.png" alt="">
-                        <p class="more-about">More About</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-            <!-- project -->
-    
-    <section class="project">
-        <h1 class="project-title">Our favorite Project</h1>
-        <div class="container project-grid">
-            <div class="project-container">
-                <div class="number-title">
-                    <p class="project-no">01/</p>
-                <h2 class="project-name">Entrepreneurship</h2>
-                </div>
-                <img class="project-img" src="images/Entrepreneurship.png" alt="">
-                <p class="podcast">126 Podcasts <img src="images/green-dots.png" alt=""></p>
-            </div>
-            <div class="project-container">
-               <div class="number-title">
-                 <p class="project-no">02/</p>
-                <h2 class="project-name">Wellness</h2>
-               </div>
-                <img class="project-img" src="images/wellness.jpg" alt="">
-                <p class="podcast">24 Podcasts <img src="images/green-dots.png" alt=""></p>
-            </div>
-            <div class="project-container">
-                <div class="number-title">
-                    <p class="project-no">03/</p>
-                <h2 class="project-name">Food & Beverage</h2>
-                </div>
-                 <img class="project-img" src="images/food-beverage.avif" alt="">
-                <p class="podcast">65 Podcasts <img src="images/green-dots.png" alt=""></p>
-            </div>
-            <div class="project-container">
-               <div class="number-title">
-                 <p class="project-no">04/</p>
-                <h2 class="project-name">Sustainability</h2>
-               </div>
-                <img class="project-img" src="images/sustain.jpg" alt="">
-                <p class="podcast">75 Podcasts <img src="images/green-dots.png" alt=""></p>
-            </div>
-        </div>
-    </section>
-
-         <!-- customer -->
-    <section class="customer">
-    <div class="container customer-container"> 
-        <div class="left">
-           <div class="left-text">
-            <h1 class="customer-title">Deliver a high-quality <span>customer</span> <span>experience</span> <img src="images/double-arrow.png" alt=""></h1>
-            <p class="customer-subtitle">Embrace AI-powered conversations with a GPT-4–supported communication platform designed to delight customers, empower teams, and reduce operational workload.</p>
-           </div>
-           <div class="left-box">
-            <div class="left-box-img">
-                <img class="box-img-1" src="images/n-something.png" alt="">
-                <img class="box-img-2" src="images/zoom.png" alt="">
-                <img class="box-img-3" src="images/elephent.png" alt="">
-                <img class="box-img-4" src="images/teams.png" alt="">
-            </div>
-            <div class="left-box-text">
-                <h3 class="left-box-title">Automate your workflow with our integrations</h3>
-                <p class="left-box-para">Connect Rotar AI with your customer service, sales, marketing, and recruitment tools using our user-friendly API, webhooks, or Zapier integration.</p>
-            </div>
-           </div>
-        </div>
-        <div class="right">
-               <div class="right-group-1">
-                   <div class="right-box-1">
-                      <div class="profile-1">
-                        <div class="name">
-                        <div class="cicrle"></div>
-                        James Kokolomel
-                      </div>
-                      <div class="password">I’ve forgotten my password</div>
-                      </div>
-                      <div class="profile-2">
-                       <div class="name-2">
-                         <img src="images/rotar-logo.png" alt="">
-                        Rotar Robot
-                       </div>
-                       <div class="profile-2-box">
-                        No worries, we’ve all been in a melancholy situation like that. To reset your password, go to the login page and click on Forgot Password? Then, enter the email address and follow it.
-                       </div>
-                      </div>
-
-                      <div class="right-box-1-text">
-                        <h3 class="right-box-1-title">Boost conversations 96% with AI</h3>
-                        <p class="right-box-1-para">Our AI-powered chatbots and automation tools are here to help.</p>
-                      </div>
- 
-                   </div>
-                   <div class="right-box-2">
-                           <div class="right-box-2-text">
-                            <h3 class="right-box-2-title">Centralize Your  Communication</h3>
-                            <p class="right-box-2-para">Easily respond to chats from all of your channels in one overview.</p>
-                           </div>
-                           <div class="right-box-2-img">
-                            <img src="images/communication-group.png" alt="">
-                           </div>
-                   </div>
-               </div>
-               <div class="right-group-2">
-                            <div class="right-box-3">
-                                <div class="right-box-3-text">
-                                    <h3 class="right-box-3-title">Always accessible with our live chat.</h3>
-                                    <p class="right-box-3-para">
-                                        Enhance Communication with Real-Time Live Chat.
-                                    </p>
-                                </div>
-                                <div class="right-box-3-img">
-                                    <img src="images/chat-box.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="right-box-4">
-                                <div class="percent-circle">
-                                    <h2 class="percent">12.5%</h2>
-                                    <p class="percent-sub">CONVERSATION <br>EMPLOYEE</p>
-                                </div>
-                                <div class="right-box-4-text">
-                                    <h3 class="right-box-4-title">Gain valuable insights from your audience</h3>
-                                    <p class="right-box-4-para">Statistics provide valuable insights into how customers interact with Rotar AI.</p>
-                                </div>
-                            </div>
-               </div>
-        </div>
-    </div>
-    </section>
-
-      <!-- creative -->
-
-    <section class="creative">
-        <div class="container">
-            <h1 class="creative-title">Meet the creative minds <br>
-behind the work</h1>
-         
-          <div class="creative-container">
-            <div class="creative-mind">
-                <img class="man-img" src="images/man-1.png" alt="">
-                <div class="creative-text">
-                    <h2 class="man-title">Creative Director</h2>
-                    <p class="man-desc">Leads the creative vision and ensures every design tells a clear, powerful brand story.</p>
-                    <p class="details">View Details</p>
-                </div>
-            </div>
-
-             <div class="creative-mind">
-                <img class="man-img" src="images/man-2.png" alt="">
-                <div class="creative-text">
-                    <h2 class="man-title">UI/UX Designer</h2>
-                    <p class="man-desc">Designs intuitive, user-focused digital experiences that balance usability and aesthetics.</p>
-                    <p class="details">View Details</p>
-                </div>
-            </div>
-
-             <div class="creative-mind">
-                <img class="man-img" src="images/man-3.png" alt="">
-                <div class="creative-text">
-                    <h2 class="man-title">Brand Designer</h2>
-                    <p class="man-desc">Crafts visual identities, logos, and brand systems that make businesses memorable.</p>
-                    <p class="details">View Details</p>
-                </div>
+    <main>
+      <!-- Hero -->
+      <section class="hero flex-col">
+        <div class="hero-content flex-col">
+          <h1 class="hero-title">Design That Inspires & Delights</h1>
+          <div class="hero-btn-wrapper">
+            <h6 class="size28">(Hero Section)</h6>
+            <div class="btn-primary">
+              <img src="./images/Arrow 1.svg" alt="" />
+              <button
+                class="learn size28"
+              >
+                Learn More
+              </button>
             </div>
           </div>
         </div>
-    </section>
+        <img src="./images/Img.png" alt="" />
+      </section>
 
-      
-      <!-- template -->
-     
-     <section class="template">
-        <div class="container template-container">
-            <div class="temp-left">
-              <h1 class="template-title">Use <span>templates</span> to get started your project</h1>
-              <div class="tags">
-                <div class="tags-top">
-                    <p class="tag">Branding</p>
-                <p class="tag">UI/UX</p>
-                <p class="tag">Web Design</p>
+      <!-- Design -->
+      <section class="design-tools">
+        <div class="design-main-div flex-col">
+          <h1 class="design-title size48">
+            We Use Design Tools That Deliver Excellence
+          </h1>
+          <div class="design-card-div flex-col">
+            <div class="card-container-1">
+              <div class="design-card">
+                <h4 class="card-title size24">
+                  We work with globally trusted design software and
+                  technologies.
+                </h4>
+                <div class="icon-btn flex-col">
+                  <img class="icon" src="./images/Icon Button.svg" alt="" />
+                  <a class="more size20" href="">More About</a>
                 </div>
-                <div class="tags-bottom">
-                    <p class="tag">Marketing</p>
-                <p class="tag">Startup</p>
-                <p class="tag">SaaS</p>
+              </div>
+              <img
+                class="design-card-container-wide"
+                src="./images/unsplash_DE6rYp1nAho.png"
+                alt=""
+              />
+            </div>
+            <div class="card-container-2">
+              <div class="design-card-container-wide">
+                <div class="design-chat-message-user">
+                  <h4 class="design-card-title-white size24">
+                    Proven Design Systems & Assets By Figma
+                  </h4>
+                  <div class="icon-btn flex-col">
+                    <img
+                      class="icon"
+                      src="./images/Icon Button (2).svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <img src="./images/capture_20240104175500945 1.png" alt="" />
+              </div>
+              <div class="design-card">
+                <h4 class="card-title size24">
+                  Every design goes through structured research, iteration, and
+                  quality.
+                </h4>
+                <div class="icon-btn flex-col">
+                  <img class="icon" src="./images/Icon Button.svg" alt="" />
+                  <a class="more size20" href="">More About</a>
                 </div>
               </div>
             </div>
-            <div class="temp-right swiper">
-                <div class="swiper-wrapper">
-                            <div class="temp-card swiper-slide">
-                                <div class="svg-filter-wrapper">
-                                    <div class="temp-box clipped-box-1">
-                                        <div class="white-chat"><p>Great Happy yo help find the right plan for you 🎯.</p>
-What are you lookin to do with Rotar AI</div>
-                                        <div class="green-chat">Get more customer on my website page</div>
-                                    </div>
-                                </div>
-                                <div class="temp-text">
-                    <h2 class="temp-name">Branding for Startups</h2>
-                    <p class="temp-para">Launch faster with professionally designed UI kits, wireframes,...</p>
-                    <p class="temp-btn">Try template for free <img src="images/template-arrow.png" alt=""></p>
-                </div>
-              </div>
-                            <div class="temp-card swiper-slide ">
-                                <div class="svg-filter-wrapper">
-                                    <div class="temp-box clipped-box-2">
-                                        <div class="white-chat">You have qualified for the next round of interview, Alvarez! Please let me know your availability 🌟</div>
-                                        <div class="green-chat">Any time between 2 to 5 PM tomorrow</div>
-                                    </div>
-                                </div>
-                                <div class="temp-text">
-                    <h2 class="temp-name">UI Kits & UX Flows</h2>
-                    <p class="temp-para">Launch faster with professionally designed UI kits, wireframes,...</p>
-                    <p class="temp-btn">Try template for free <img src="images/template-arrow.png" alt=""></p>
-                </div>
-              </div>
-                            <div class="temp-card swiper-slide">
-                                <div class="svg-filter-wrapper">
-                                    <div class="temp-box clipped-box-3">
-                                        <div class="white-chat"><p>Great Happy yo help find the right plan for you 🎯.</p>
-What are you lookin to do with Rotar AI</div>
-                                        <div class="green-chat">Get more customer on my website page</div>
-                                    </div>
-                                </div>
-                                <div class="temp-text">
-                    <h2 class="temp-name">Website Design</h2>
-                    <p class="temp-para">Launch faster with professionally designed UI kits, wireframes,...</p>
-                    <p class="temp-btn">Try template for free <img src="images/template-arrow.png" alt=""></p>
-                </div>
-              </div>
-            </div>
-            </div>
+          </div>
         </div>
-     </section>
-       
-       
-                  <!-- completed slide -->
-        
-<div class="completed-project-bg">
-  <section class="completed-project-section">
-    <div class="line"></div>
-    <div class="line line1"></div>
-    <div class="line line2"></div>
-    <div class="completed-circle-wrapper">
-      <div class="circle">
-        <img class="circle-img" src="./images/circle-img.png" alt="" />
-        <div class="semi-circle-down"></div>
+      </section>
 
-        <ul class="fruit-list flex-col">
-          <li>Concord Grape</li>
-          <li class="fruit-item-left">Avocado</li>
-          <li class="fruit-item-right">Blackberry</li>
-          <li class="fruit-item-right">Strawberry</li>
-          <li class="fruit-item-left">Orange</li>
-          <li>Pomegranate</li>
-        </ul>
-      </div>
-      <div class="fruit-content">
-        <h3 class="completed-text completed-title">Completed Project</h3>
-        <p class="completed-text completed-para">
-          Fruits are an excellent source of essential vitamins and
-          minerals, and they are high in fiber. Fruits also provide a wide
-          range of health-boosting antioxidants, including flavonoids.
-          Eating a diet high in fruits and vegetables can reduce a
-          person's risk of developing heart disease, cancer, inflammation,
-          and diabetes.
-        </p>
-      </div>
-    </div>
-
-    <div class="arrow-btn flex-col">
-      <img class="arrow-up" src="images/arrow-up.png" alt="" />
-      <img class="arrow-down" src="images/arrow-down.png" alt="" />
-    </div>
-
-    <div class="fruits flex-col">
-      <div class="slider slider-1">
-        <h1 class="completed-fruit-number">01</h1>
-        <h4 class="completed-fruit-name">Concord Grape</h4>
-        <img class="fruit-img" src="images/concord-grape.jpg" alt="" />
-      </div>
-      <div class="slider slider-2">
-        <h1 class="completed-fruit-number">02</h1>
-        <h4 class="completed-fruit-name">Avocado</h4>
-        <img class="fruit-img" src="images/avocado.jpg" alt="" />
-      </div>
-      <div class="slider slider-3">
-        <h1 class="completed-fruit-number">03</h1>
-        <h4 class="completed-fruit-name">Blackberry</h4>
-        <img class="fruit-img" src="images/blueberry.jpg" alt="" />
-      </div>
-      <div class="slider slider-4">
-        <h1 class="completed-fruit-number">04</h1>
-        <h4 class="completed-fruit-name">Strawberry</h4>
-        <img class="fruit-img" src="images/strawberry.jpg" alt="" />
-      </div>
-      <div class="slider slider-5">
-        <h1 class="completed-fruit-number">05</h1>
-        <h4 class="completed-fruit-name">Orange</h4>
-        <img class="fruit-img" src="images/orange.jpg" alt="" />
-      </div>
-      <div class="slider slider-6">
-        <h1 class="completed-fruit-number">06</h1>
-        <h4 class="completed-fruit-name">Pomegranate</h4>
-        <img class="fruit-img" src="images/pomegrenate.jpg" alt="" />
-      </div>
-    </div>
-  </section>
-</div>
-        
-            
-
-                 <!-- control -->
-                
-        
-           <section class="control">
-            <div class="container svg-filter-wrapper ">
-                <div class="control-brand">
-                    <h1 class="control-title">Take control of your brand experience today</h1>
-                    <div class="control-details">
-                        <p class="control-para">Transform your business with strategic design solutions that elevate your brand, engage your audience, and drive measurable growth.</p>
-                        <div class="control-btn-container">
-                            <p class="contact-now"><img src="images/iconoir_arrow-tr.png" alt=""> Contact Now</p>
-                            <p class="contact-us">Contact Us <img src="images/call-2.png" alt=""></p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Project -->
+      <section class="favorite-project flex-col">
+        <h1 class="favorite-title size48">Our favorite Project</h1>
+        <div class="favorite-content-wrapper flex-col">
+          <div class="favorite-content">
+            <img class="favorite-image" src="images/Entrepreneurship.png" alt="" />
+            <div class="favorite-stat-box">
+              <h6 class="number size24">01/</h6>
+              <h3 class="favorite-text size64">Entrepreneurship</h3>
             </div>
-           </section>
-
-
-   </main>
-          <!-- footer -->
-
-          <footer>
-            <div class="container footer-container">
-                <div class="footer-top">
-                    <div class="footer-left">
-                        <img src="images/wm-w.png" alt="" class="f-logo">
-                        <p class="footer-para" style="color: white;">Don’t need to look around for individual experts. We have all under one roof!</p>
-                        <p class="contact-now" style="max-width: 206px;"><img src="images/iconoir_arrow-tr.png"  alt=""> Book a Meeting</p>
-
-                    </div>
-                    <div class="footer-right"  style="color: white;">
-                       <div class="f-tags">
-                        <h3 class="quick-tag">Tags</h3>
-                        <ul class="q-tags">
-                            <li>Laravel Developer</li>
-                            <li>PHP Developer</li>
-                            <li>Javascript Developer</li>
-                            <li>Yii Developer</li>
-                            <li>Mobile App Developer</li>
-                            <li>Software Developer</li>
-                            <li>Wordpress Developer</li>
-                            <li>Wordpress Theme Developer</li>
-                            <li>Wordpress Plugin Developer</li>
-                            <li>MERN Stack Developer</li>
-                            <li>React Developer</li>
-                            <li>Node Js Developer</li>
-                            <li>Vue Js Developer</li>
-                        </ul>
-                       </div>
-                       <div class="f-links">
-                        <h3 class="q-link">Quick Links</h3>
-                        <ul class="q-links">
-                            <li>Portfolio</li>
-                            <li>Testimonial</li>
-                            <li>Contact</li>
-                            <li>About</li>
-                            <li>Career</li>
-                        </ul>
-                        <h3 class="marketing-title">Marketing Solution</h3>
-                        <img src="images/crazygraph.png " alt="" class="marketing-logo">
-                       </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="f-bottom-content"  style="color: white;">
-                        <img src="images/Webermelon.png" alt="" class="webermelon">
-                        <div class="svg-filter-wrapper">
-                            <div class="location-box ">
-                            <div class="location">
-                                <h4 class="location-title">USA</h4>
-                                <p class="location-para">25108 Marguerite Pkwy Suite A-236 Mission Viejo Ca 92692</p>
-                            </div>
-                            <div class="location">
-                                <h4 class="location-title">United Kingdom</h4>
-                                <p class="location-para">Webermelon Limited 71-75 Shelton Street, Covent Garden London WC2H 9JQ</p>
-                            </div>
-                            <div class="location">
-                                <h4 class="location-title">Bangladesh</h4>
-                                <p class="location-para">Webermelon, Skytech Nargis (4th Floor), Habib Lane, Khulshi,  Chittagong</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="f-bottom-links">
-                        <div class="socials">
-                            <img src="images/linked-in.png" alt="">
-                            <img src="images/insta.png" alt="">
-                            <img src="images/fb.png" alt="">
-                            <img src="images/twitter.png" alt="">
-                        </div>
-                        <p class="copyright">
-                            © 2024. All rights reserved.
-                        </p>
-                    </div>
-                </div>
+            <div class="favorite-stat-box favorite-stat-label">
+              <p class="favorite-text size20">126 Podcasts</p>
+              <img src="./images/Frame 33 (1).svg" alt="" />
             </div>
-          </footer>
+          </div>
 
+          <div class="favorite-content">
+            <img
+              class="favorite-image"
+              src="./images/Image (1).png"
+              alt=""
+            />
+            <div class="favorite-stat-box">
+              <h6 class="number size24">02/</h6>
+              <h3 class="favorite-text size64">Wellness</h3>
+            </div>
+            <div class="favorite-stat-box favorite-stat-label">
+              <p class="favorite-text size20">24 Podcasts</p>
+              <img src="./images/Frame 33 (2).svg" alt="" />
+            </div>
+          </div>
 
+          <div class="favorite-content">
+            <img
+              class="favorite-image"
+              src="./images/food-beverage.avif"
+              alt=""
+            />
+            <div class="favorite-stat-box">
+              <h6 class="number size24">03/</h6>
+              <h3 class="favorite-text size64">Food & Beverage</h3>
+            </div>
+            <div class="favorite-stat-box favorite-stat-label">
+              <p class="favorite-text size20">65 Podcasts</p>
+              <img src="./images/Frame 33 (3).svg" alt="" />
+            </div>
+          </div>
 
+          <div class="favorite-content">
+            <img
+              class="favorite-image"
+              src="./images/sustain.jpg"
+              alt=""
+            />
+            <div class="favorite-stat-box">
+              <h6 class="number size24">04/</h6>
+              <h3 class="favorite-text size64">Sustainability</h3>
+            </div>
+            <div class="favorite-stat-box favorite-stat-label">
+              <p class="favorite-text size20">75 Podcasts</p>
+              <img src="./images/Frame 33 (4).svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-   <!-- svg -->
-
-   <svg style="visibility: hidden; position: absolute" width="0" height="0">
-  <defs>
-    <filter id="gooey">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-    </filter>
-  </defs>
+      <!-- Customer -->
+      <section class="customer">
+        <div class="customer-main-container">
+          <div class="customer-flex-wrapper flex-col">
+            <div class="customer-intro flex-col">
+              <h1 class="size64" style="color: #000000">
+                Deliver a high-quality
+                <span class="customer-highlight-span">customer experience  <svg class="svg" width="567" height="173" viewBox="0 0 567 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M240.666 20C240.666 8.9543 249.62 0 260.666 0H546.502C557.548 0 566.502 8.9543 566.502 20V62.2087C566.502 73.2544 557.548 82.2087 546.502 82.2087H391.325C380.279 82.2087 371.325 91.163 371.325 102.209V153C371.325 164.046 362.371 173 351.325 173H20C8.9543 173 0 164.046 0 153V111.275C0 100.23 8.95431 91.2754 20 91.2754H220.666C231.712 91.2754 240.666 82.3211 240.666 71.2754V20Z" fill="#ACEBDF"/>
 </svg>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
+ </span>
+                <img src="./images/Shape (1).svg" alt="" />
+              </h1>
+              <p class="size18" style="color: #707070">
+                Embrace AI-powered conversations with a GPT-4â€“supported
+                communication platform designed to delight customers, empower
+                teams, and reduce operational workload.
+              </p>
+            </div>
+            <div class="customer-automation flex-col">
+              <img src="./images/Group 604.svg" alt="" />
+              <div class="automation-content flex-col">
+                <h6 class="size22" style="color: #000000">
+                  Automate your workflow with our integrations
+                </h6>
+                <p class="size16" style="color: #a4a4a4">
+                  Connect Rotar AI with your customer service, sales, marketing,
+                  and recruitment tools using our user-friendly API, webhooks,
+                  or Zapier integration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer-demo-centralize-wrapper">
+            <div class="customer-demo-centralize-inner flex-col">
+              <div class="customer-chat-demo flex-col">
+                <div class="chat-message-user flex-col">
+                  <div class="chat-user-header">
+                    <p class="chat-avatar"></p>
+                    <p class="size16" style="color: #000000">James Kokolomel</p>
+                  </div>
+                  <p class="forgot size12">Iâ€™ve forgotten my password</p>
+                </div>
+                <div class="chat-message-bot flex-col">
+                  <div class="chat-user-header">
+                    <img src="./images/Group 601 (1).svg" alt="" />
+                    <p class="size16" style="color: #000000">Rotar Robot</p>
+                  </div>
+                  <p class="chat-bot-text size12">
+                    No worries, weâ€™ve all been in a melancholy situation like
+                    that. To reset your password, go to the login page and click
+                    on Forgot Password? Then, enter the email address and follow
+                    it.
+                  </p>
+                </div>
+
+                <div class="chat-stats-heading flex-col">
+                  <p class="size24" style="color: #000000">
+                    Boost conversations 96% with AI
+                  </p>
+                  <p class="size18" style="color: #606060">
+                    Our AI-powered chatbots and automation tools are here to
+                    help.
+                  </p>
+                </div>
+              </div>
+              <div class="customer-centralize flex-col">
+                <div class="centralize-header flex-col">
+                  <h6 class="size24">Centralize Your Communication</h6>
+                  <p class="size18">
+                    Easily respond to chats from all of your channels in one
+                    overview.
+                  </p>
+                </div>
+                <img src="./images/Group 605.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="customer-additional-features flex-col">
+              <div class="live-chat-panel flex-col">
+                <div class="live-chat-header flex-col">
+                  <h6 class="size24" style="color: #000000">
+                    Always accessible with our live chat.
+                  </h6>
+                  <p class="size18" style="color: #000000">
+                    Enhance Communication with Real-Time Live Chat.
+                  </p>
+                </div>
+                <img src="./images/Frame 48095508.png" alt="" />
+              </div>
+              <div class="live-chat-panel audience-insights-panel">
+                <div class="pie">
+                  <img src="./images/Variant2.svg" alt="" />
+                  <div class="per-para">
+                    <p class="percent">1 2 . 5%</p>
+                    <p class="conver size12">CONVERSATION EMPLOYEE</p>
+                  </div>
+                </div>
+                <div class="live-chat-header">
+                  <h6 class="size20">
+                    Gain valuable insights from your audience
+                  </h6>
+                  <p class="size16">
+                    Statistics provide valuable insights into how customers
+                    interact with Rotar AI.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Creative -->
+      <section class="creative-container flex-col">
+        <h1 class="size48 creative-title">
+          Meet the creative minds behind the work
+        </h1>
+        <div class="creative-card-container">
+          <div class="creative-card flex-col">
+            <img class="creative-img" src="./images/Images.png" alt="" />
+            <div class="creative-card-content flex-col">
+              <h4 class="size24">Creative Director</h4>
+              <p class="size18 creative-desc">
+                Leads the creative vision and ensures every design tells a
+                clear, powerful brand story.
+              </p>
+              <button class="creative-btn size16">View Details</button>
+            </div>
+          </div>
+
+          <div class="creative-card flex-col">
+            <img class="creative-img" src="./images/Image (2).png" alt="" />
+            <div class="creative-card-content flex-col">
+              <h4 class="size24">UI/UX Designer</h4>
+              <p class="size18 creative-desc">
+                Designs intuitive, user-focused digital experiences that balance
+                usability and .
+              </p>
+              <button class="creative-btn size16">View Details</button>
+            </div>
+          </div>
+
+          <div class="creative-card flex-col">
+            <img class="creative-img" src="./images/Image (3).png" alt="" />
+            <div class="creative-card-content flex-col">
+              <h4 class="size24">Brand Designer</h4>
+              <p class="size18 creative-desc">
+                Crafts visual identities, logos, and brand systems that make
+                businesses memorable.
+              </p>
+              <button class="creative-btn size16">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Template -->
+      <section class="template-container">
+        <div class="temp-content flex-col">
+          <h1 class="size64" style="color: #000000">
+            Use <span class="tem-span">templates</span> to get started your
+            project
+          </h1>
+          <ul class="temp-list-container">
+            <li class="temp-list size16" data-category="branding">Branding</li>
+            <li class="temp-list size16" data-category="uiux">UI/UX</li>
+            <li class="temp-list size16" data-category="web">Web Design</li>
+            <li class="temp-list size16" data-category="marketing">
+              Marketing
+            </li>
+            <li class="temp-list size16" data-category="startup">Startup</li>
+            <li class="temp-list size16" data-category="saas">SaaS</li>
+          </ul>
+        </div>
+
+        <div class="slider-wrapper">
+          <div class="template-card-container" id="slider">
+            <div class="template-card flex-col" data-category="branding">
+              <div class="goo-filter-wrapper">
+                <div class="img-content flex-col" style="opacity: 0.9">
+                  <p class="i-c size12">
+                    Great Happy yo help find the right plan for you ðŸŽ¯.
+                    <br />
+                    <br />
+                    What are you lookin to do with Rotar AI
+                  </p>
+                  <p class="i-c-2 size12">
+                    Get more customer on my website page
+                  </p>
+                </div>
+              </div>
+              <div class="t-only-content flex-col">
+                <div>
+                  <h4 class="t-title size24" style="color: #000000">
+                    Branding for Startups
+                  </h4>
+                  <p class="size18 creative-desc" style="color: #606060">
+                    Pre-built brand identity templates including logos, color
+                    systems, typography, and brand guidelines â€” ready to
+                    customize for your business.
+                  </p>
+                </div>
+                <button class="size16 try-btn">
+                  Try template for free <img src="./images/Vector.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="template-card flex-col" data-category="uiux">
+              <div class="goo-filter-wrapper">
+                <div class="img-content flex-col img-content-2">
+                  <p class="i-c size12">
+                    You have qualified for the next round of interview, Alvarez!
+                    Please let me know your availability ðŸŒŸ
+                  </p>
+                  <p class="i-c-2 size12">
+                    Any time between 2 to 5 PM tomorrow
+                  </p>
+                </div>
+              </div>
+              <div class="t-only-content flex-col">
+                <div>
+                  <h4 class="t-title size24" style="color: #000000">
+                    UI Kits & UX Flows
+                  </h4>
+                  <p class="size18 creative-desc" style="color: #606060">
+                    Pre-built brand identity templates including logos, color
+                    systems, typography, and brand guidelines â€” ready to
+                    customize for your business.
+                  </p>
+                </div>
+                <button class="size16 try-btn">
+                  Try template for free <img src="./images/Vector.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="template-card flex-col" data-category="web">
+              <div class="goo-filter-wrapper">
+                <div class="img-content flex-col img-content-3">
+                  <p class="i-c size12">
+                    Great Happy yo help find the right plan for you ðŸŽ¯.
+                    <br />
+                    <br />
+                    What are you lookin to do with Rotar AI
+                  </p>
+                  <p class="i-c-2 size12">
+                    Get more customer on my website page
+                  </p>
+                </div>
+              </div>
+              <div class="t-only-content flex-col">
+                <div>
+                  <h4 class="t-title size24" style="color: #000000">
+                    Website Design
+                  </h4>
+                  <p class="size18 creative-desc" style="color: #606060">
+                    Modern, responsive website templates designed for
+                    performance, clarity, and conversion across industries.
+                  </p>
+                </div>
+                <button class="size16 try-btn">
+                  Try template for free <img src="./images/Vector.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="template-card flex-col" data-category="marketing">
+              <div class="goo-filter-wrapper">
+                <div class="img-content flex-col" style="opacity: 0.9">
+                  <p class="i-c size12">
+                    Great Happy yo help find the right plan for you ðŸŽ¯.
+                    <br />
+                    <br />
+                    What are you lookin to do with Rotar AI
+                  </p>
+                  <p class="i-c-2 size12">
+                    Get more customer on my website page
+                  </p>
+                </div>
+              </div>
+              <div class="t-only-content flex-col">
+                <div>
+                  <h4 class="t-title size24" style="color: #000000">
+                    Marketing for Startups
+                  </h4>
+                  <p class="size18 creative-desc" style="color: #606060">
+                    Pre-built brand identity templates including logos, color
+                    systems, typography, and brand guidelines â€” ready to
+                    customize for your business.
+                  </p>
+                </div>
+                <button class="size16 try-btn">
+                  Try template for free <img src="./images/Vector.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="template-card flex-col" data-category="startup">
+              <div class="goo-filter-wrapper">
+                <div class="img-content flex-col img-content-2">
+                  <p class="i-c size12">
+                    You have qualified for the next round of interview, Alvarez!
+                    Please let me know your availability ðŸŒŸ
+                  </p>
+                  <p class="i-c-2 size12">
+                    Any time between 2 to 5 PM tomorrow
+                  </p>
+                </div>
+              </div>
+              <div class="t-only-content flex-col">
+                <div>
+                  <h4 class="t-title size24" style="color: #000000">
+                    UI & UX startup
+                  </h4>
+                  <p class="size18 creative-desc" style="color: #606060">
+                    Pre-built brand identity templates including logos, color
+                    systems, typography, and brand guidelines â€” ready to
+                    customize for your business.
+                  </p>
+                </div>
+                <button class="size16 try-btn">
+                  Try template for free <img src="./images/Vector.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="template-card flex-col" data-category="saas">
+              <div class="goo-filter-wrapper">
+                <div class="img-content flex-col img-content-3">
+                  <p class="i-c size12">
+                    Great Happy yo help find the right plan for you ðŸŽ¯.
+                    <br />
+                    <br />
+                    What are you lookin to do with Rotar AI
+                  </p>
+                  <p class="i-c-2 size12">
+                    Get more customer on my website page
+                  </p>
+                </div>
+              </div>
+              <div class="t-only-content flex-col">
+                <div>
+                  <h4 class="t-title size24" style="color: #000000">
+                    Build Saas Project
+                  </h4>
+                  <p class="size18 creative-desc" style="color: #606060">
+                    Modern, responsive website templates designed for
+                    performance, clarity, and conversion across industries.
+                  </p>
+                </div>
+                <button class="size16 try-btn">
+                  Try template for free <img src="./images/Vector.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Completed -->
+      <div class="completed-project-bg">
+        <section class="completed-project-section">
+          <div class="line"></div>
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="completed-circle-wrapper">
+            <div class="circle">
+              <img
+                class="circle-img"
+                src="./images/Frame 48095516 (1).svg"
+                alt=""
+              />
+              <div class="semi-circle-down"></div>
+
+              <ul class="fruit-list flex-col">
+                <li>Concord Grape</li>
+                <li class="fruit-item-left">Avocado</li>
+                <li class="fruit-item-right">Blackberry</li>
+                <li class="fruit-item-right">Strawberry</li>
+                <li class="fruit-item-left">Orange</li>
+                <li>Pomegranate</li>
+              </ul>
+            </div>
+            <div class="fruit-content">
+              <h3 class="completed-text">Completed Project</h3>
+              <p class="completed-text completed-para">
+                Fruits are an excellent source of essential vitamins and
+                minerals, and they are high in fiber. Fruits also provide a wide
+                range of health-boosting antioxidants, including flavonoids.
+                Eating a diet high in fruits and vegetables can reduce a
+                person's risk of developing heart disease, cancer, inflammation,
+                and diabetes.Apr
+              </p>
+            </div>
+          </div>
+
+          <div class="arrow-btn flex-col">
+            <img class="arrow-up" src="./images/arrow-up.svg" alt="" />
+            <img class="arrow-down" src="./images/arrow-down.svg" alt="" />
+          </div>
+
+          <div class="fruits flex-col">
+            <div class="slider slider-1">
+              <h1 class="completed-fruit-number">01</h1>
+              <h4 class="completed-fruit-name">Concord Grape</h4>
+              <img
+                class="fruit-img"
+                src="./images/ecc0dd2cf591e08ab9f76fe29830103e5d17b268.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider slider-2">
+              <h1 class="completed-fruit-number">02</h1>
+              <h4 class="completed-fruit-name">Avocado</h4>
+              <img
+                class="fruit-img"
+                src="./images/1fac1960e1c549c0a290b35e86fd876068b0c0d4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider slider-3">
+              <h1 class="completed-fruit-number">03</h1>
+              <h4 class="completed-fruit-name">Blackberry</h4>
+              <img
+                class="fruit-img"
+                src="./images/cb0718b62cca8770d4d4011d8d588648ec43b1bb.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider slider-4">
+              <h1 class="completed-fruit-number">04</h1>
+              <h4 class="completed-fruit-name">Strawberry</h4>
+              <img
+                class="fruit-img"
+                src="./images/c128a8be75eb0ef644bfa6b9c1385fd412d36c4b.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider slider-5">
+              <h1 class="completed-fruit-number">05</h1>
+              <h4 class="completed-fruit-name">Orange</h4>
+              <img
+                class="fruit-img"
+                src="./images/61b09b3ee26bbed78c52f6b42b2796c2b24a9748.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slider slider-6">
+              <h1 class="completed-fruit-number">06</h1>
+              <h4 class="completed-fruit-name">Pomegranate</h4>
+              <img
+                class="fruit-img"
+                src="./images/d44dc5623aae902fff2a5d978b77695a8ac2844f.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Control -->
+      <section class="control-section">
+        <div class="goo-filter-wrapper">
+          <div class="control-brand-wrapper flex-col">
+            <h1 class="control-title size64">
+              Take control of your brand experience today
+            </h1>
+            <div class="control-actions">
+              <h5 class="control-para size18">
+                Transform your business with strategic design solutions that
+                elevate your brand, engage your audience, and drive measurable
+                growth.
+              </h5>
+              <div class="btns-div">
+                <div class="sliding-btn-div sliding-btn-div2">
+                  <a href="" class="sliding-btn size18"
+                    ><span
+                      ><svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.75 12.75L12.75 0.75M12.75 0.75V12.27M12.75 0.75H1.23"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg> </span
+                    >Contact Now</a
+                  >
+                </div>
+                <button class="btn-3 size16">
+                  Contact Us <img src="./images/Icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-main-div flex-col">
+        <div class="footer-top-row">
+          <div class="logo-c-btn flex-col">
+            <img class="footer-logo" src="./images/Group 3.svg" alt="" />
+            <p class="footer-description size18">
+              Donâ€™t need to look around for individual experts. We have all
+              under one roof!
+            </p>
+            <div class="sliding-btn-div">
+              <a href="" class="sliding-btn size18"
+                ><span
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 12.75L12.75 0.75M12.75 0.75V12.27M12.75 0.75H1.23"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> </span
+                >Book a Meeting</a
+              >
+            </div>
+          </div>
+
+          <div class="logs-links-div">
+            <div class="logs-div flex-col">
+              <h6 class="size24">Tags</h6>
+              <ul class="logs flex-col">
+                <li class="link size16">Laravel Developer</li>
+                <li class="link size16">PHP Developer</li>
+                <li class="link size16">Yii Developer</li>
+                <li class="link size16">Mobile App Developer</li>
+                <li class="link size16">Software Developer</li>
+                <li class="link size16">WordPress Developer</li>
+                <li class="link size16">WordPress Theme Development</li>
+                <li class="link size16">WordPress Plugin Development</li>
+                <li class="link size16">MERN Strack Development</li>
+                <li class="link size16">React Developer</li>
+                <li class="link size16">Node Js Developer</li>
+                <li class="link size16">Vue Js Developer</li>
+              </ul>
+            </div>
+
+            <div class="links-market flex-col">
+              <div class="links-div flex-col">
+                <h6 class="size24">Quick Links</h6>
+                <ul class="links flex-col">
+                  <li class="link size16">Portfolio</li>
+                  <li class="link size16">Testimonial</li>
+                  <li class="link size16">Contact</li>
+                  <li class="link size16">About</li>
+                  <li class="link size16">Career</li>
+                </ul>
+              </div>
+              <div class="footer-marketing-banner flex-col">
+                <h4 class="size24">Marketing Solution</h4>
+                <img src="./images/Option.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-row flex-col">
+          <div>
+            <img class="webermelon" src="./images/Webermelon.svg" alt="" />
+            <div class="goo-filter-wrapper">
+              <div class="footer-locations-wrapper">
+                <svg
+                  style="visibility: hidden; position: absolute"
+                  width="0"
+                  height="0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                >
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="8"
+                        result="blur"
+                      />
+                      <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo"
+                      />
+                      <feComposite
+                        in="SourceGraphic"
+                        in2="goo"
+                        operator="atop"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <div class="footer-location-item flex-col">
+                  <h6 class="size24">USA</h6>
+                  <p class="size16">
+                    25108 Marguerite Pkwy Suite A-236 Mission Viejo Ca 92692
+                  </p>
+                </div>
+                <div class="footer-location-item flex-col">
+                  <h6 class="size24">United Kingdom</h6>
+                  <p class="size16">
+                    Webermelon Limited 71-75 Shelton Street, Covent Garden
+                    London WC2H 9JQ
+                  </p>
+                </div>
+                <div class="footer-location-item flex-col">
+                  <h6 class="size24">Bangladesh</h6>
+                  <p class="size16">
+                    Webermelon, Skytech Nargis (4th Floor), Habib Lane,
+                    Khulshi, Chittagong
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-copy">
+            <div class="social-icons">
+              <img src="./images/Group (4).svg" alt="" />
+              <img src="./images/Group (3).svg" alt="" />
+              <img src="./images/Group (1).svg" alt="" />
+              <img src="./images/Group (2).svg" alt="" />
+            </div>
+            <p class="copy size20">© 2024. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
