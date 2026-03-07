@@ -1,7 +1,7 @@
-.container{
+/* .container{
     max-width: 1240px;
     margin: 0 auto;
-}
+} */
 
 /* .active{
     background-color: #000000;
@@ -10,3 +10,87 @@
     padding: 8px 20px;
     height: 38px;
 } */
+
+
+.size12 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.size16 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.size18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.size20 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.size22 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.size24 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.size28 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.size48 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.size64 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.creative-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  background-color: #ffffff;
+  color: #24806f;
+}

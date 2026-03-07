@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import "utils.css";
 * {
   padding: 0;
   margin: 0;
@@ -19,89 +19,6 @@ body {
 }
 
 
-
-.size12 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #000000;
-}
-
-.size16 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.size18 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.size20 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.size22 {
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.size24 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.size28 {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.4em;
-  letter-spacing: -0.03em;
-  color: #000000;
-}
-
-.size48 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.size64 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 1.4em;
-  letter-spacing: 0em;
-  color: #ffffff;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.creative-btn:hover {
-  transform: scale(1.05) translateY(-2px);
-  background-color: #ffffff;
-  color: #24806f;
-}
 
 
 /* Navbar */
