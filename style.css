@@ -1185,6 +1185,44 @@ footer {
   cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width:366px) {
+ .fa-bars{ position: relative;
+    right: 25px;}
+    .line{
+      display: none;
+    }
+   .completed-fruit-name{
+    font-size: 12px;
+   }
+  .completed-fruit-number{
+    font-size: 14px !important;
+    position: relative;
+
+  }
+  
+}
+
+
+
+
+
+
 @media (max-width: 576px) {
   .size16 {
     font-size: 10px;
