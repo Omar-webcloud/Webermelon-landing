@@ -90,7 +90,7 @@
 }
 
 .creative-btn:hover {
-  transform: scale(1.05) translateY(-2px);
+  transform: scale(1.02) translateY(-2px);
   background-color: #ffffff;
   color: #24806f;
 }
