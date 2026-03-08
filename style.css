@@ -302,6 +302,7 @@ header {
   border-bottom: 2px solid #a4a4a4;
   cursor: pointer;
   position: relative;
+  transition: ease-in-out 0.5s;
 }
 
 .favorite-image {
