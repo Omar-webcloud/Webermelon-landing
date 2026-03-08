@@ -1073,11 +1073,20 @@ footer {
   position: relative;
 }
 
-.sliding-btn:hover {
-  transform: scale(1.03);
+
+  .sliding-btn:hover {
+  padding-left: 16px;
+  padding-right: 50px;
   background-color: #24806f;
   color: #ffffff;
 }
+.sliding-btn:hover span {
+  left: calc(100% - 40px);
+  background-color: #ffffff;
+  color: #24806f;
+}
+
+
 
 .sliding-btn span {
   position: absolute;
