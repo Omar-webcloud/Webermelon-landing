@@ -173,7 +173,6 @@ function updateSlider() {
   completeBg.style.backgroundColor = bgColors[currentIndex];
 
   const step = 22.5;
-  semiCircle.style.transition = "--fill 1.5s ease";
   semiCircle.style.setProperty("--fill", `${150 + currentIndex * step}deg`);
 
   setActiveFruit();

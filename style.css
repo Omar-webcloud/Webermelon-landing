@@ -828,6 +828,12 @@ header {
   position: relative;
 }
 
+@property --fill {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 120deg;
+}
+
 .semi-circle-down {
   position: absolute;
   width: 400px;
@@ -849,7 +855,7 @@ header {
     transparent 360deg
   );
 
-  transition: .5s ease;
+  transition: --fill 1.5s ease;
 
   -webkit-mask: radial-gradient(
     circle,
