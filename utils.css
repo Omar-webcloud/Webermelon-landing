@@ -79,7 +79,7 @@
 .size64 {
   font-size: 64px;
   font-weight: 500;
-  line-height: 1.4em;
+  /* line-height: 1.4em; */
   letter-spacing: 0em;
   color: #ffffff;
 }
