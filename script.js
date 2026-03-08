@@ -11,7 +11,6 @@
 
   originalCards.forEach((card) => {
     slider.appendChild(card.cloneNode(true));
-    slider.appendChild(card.cloneNode(true));
   });
 
   const allCards = Array.from(slider.children);
@@ -20,7 +19,7 @@
     return allCards[0].offsetWidth + gap;
   }
 
-  currentIndex = originalCards.length;
+  currentIndex = 0;
   slider.style.transform = `translateX(-${currentIndex * cardWidth()}px)`;
 
   function moveTo(index, smooth = true) {
@@ -32,9 +31,9 @@
     currentIndex++;
     moveTo(currentIndex);
 
-    if (currentIndex >= originalCards.length * 2) {
+    if (currentIndex >= originalCards.length) {
       setTimeout(() => {
-        currentIndex = originalCards.length;
+        currentIndex = 0;
         moveTo(currentIndex, false);
       }, 600);
     }
